@@ -1,0 +1,16 @@
+# Ignore dependencies in any folder
+node_modules/
+client/node_modules/
+server/node_modules/
+
+# Ignore local environment variables and secrets
+.env
+.env.local
+server/.env
+client/.env
+
+# Ignore build outputs and logs
+dist/
+build/
+*.log
+.DS_Store
