@@ -25,7 +25,6 @@ const EditTodo = ({ todo }) => {
 
   return (
     <Fragment>
-      {/* Target button works for both Bootstrap 4 and 5 */}
       <button
         type="button"
         className="btn btn-warning"

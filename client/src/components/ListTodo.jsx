@@ -39,18 +39,17 @@ const ListTodos = () => {
 
   return (
     <Fragment>
-      <table className="table mt-5 text-center">
-        <thead>
+      <table className="table table-bordered table-striped align-middle mt-5 mb-0 w-75 m-auto" >
+        <thead className="table-light text-uppercase fs-7 fw-semibold text-secondary">
           <tr>
-            <th>Description</th>
-            <th>Edit</th>
-            <th>Delete</th>
+            <th scope="col">Description</th>
+            <th scope="col" class="pe-4" colspan="2">Actions</th>
           </tr>
         </thead>
         <tbody>
           {todos.map(todo => (
             <tr key={todo.todo_id}>
-              <td>{todo.description}</td>
+              <td class="ps-4 py-3">{todo.description}</td>
               <td>
                 <EditTodo todo={todo} />
               </td>
