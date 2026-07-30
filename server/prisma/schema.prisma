@@ -1,0 +1,12 @@
+datasource db {
+  provider = "postgresql"
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model todo {
+  todo_id     Int    @id @default(autoincrement())
+  description String @db.VarChar(255)
+}
